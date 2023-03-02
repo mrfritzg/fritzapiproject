@@ -8,7 +8,7 @@ export default function Search() {
   let [character, setCharacter] = useState(null);
 
    async function getCharacter(name) {
-    console.log(name);
+    // console.log(name);
 
     const key = '1381472152670820';
     let url = `https://www.superheroapi.com/api.php/${key}/search/${name}`;
@@ -18,7 +18,7 @@ export default function Search() {
        let data = await response.json();
        setCharacter(data.results);
     // console.log(response)
-    console.log(data.results)
+    // console.log(data.results)
     } catch (error) {
       console.log("something went wrong");
     }
@@ -31,8 +31,13 @@ export default function Search() {
   if (character) {
     return (
       <div className="App">
-        <CharacterItem heroData={character} />
         <Form getCharacter={getCharacter} />
+        {character.map(hero => {
+          return (
+            <CharacterItem key={hero.id} hero={hero} />   
+          )
+        })}
+        
       </div>
     );
   } else {

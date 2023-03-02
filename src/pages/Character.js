@@ -43,8 +43,10 @@ export default function Character (props) {
         <div>
             {/* console.log({character2}) */}
             <img src={character2.image?.url} alt={character2.name} />
-            Hello
-            {character2.connections?.["group-affiliation"]}
+            
+            <p>Name: {character2.name}</p>
+            <p>Group-Affiliations: {character2.connections?.["group-affiliation"]}</p>
+            
 
         </div>
     )
