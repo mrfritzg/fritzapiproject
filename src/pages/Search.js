@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Form from "../components/Form";
-import axios from "axios";
+import CharacterItem from "../components/CharacterItem";
 
 // import MovieDisplay from "./components/MovieDisplay";
 
@@ -12,22 +12,6 @@ export default function Search() {
 
     const key = '1381472152670820';
     let url = `https://www.superheroapi.com/api.php/${key}/search/${name}`;
-
-    // await fetch(url, {
-    //     method: 'GET',
-    //     mode: "cors",
-    //     headers: {
-    //         'accept': 'application/json',
-    //         'Access-Control-Allow-Origin': '*',
-    //         'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
-    //         'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With'
-    //     }
-    // })
-    //     .then((response) => console.log(response))
-    //     .catch(err => console.log(err))
-    //     .then((data) => console.log(data))
-    //     .catch(err => console.log(err));
-
 
     try {
       let response = await fetch(url);
@@ -41,13 +25,13 @@ export default function Search() {
   }
 
   useEffect(() => {
-    getCharacter("superman");
+    getCharacter("");
   }, []);
 
   if (character) {
     return (
       <div className="App">
-        {/* <MovieDisplay movie={movie} /> */}
+        <CharacterItem heroData={character} />
         <Form getCharacter={getCharacter} />
       </div>
     );
