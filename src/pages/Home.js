@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import CharacterList from "../components/CharacterList";
+
 export default function Home() {
   
   // let key = process.env.REACT_APP_KEY;
@@ -26,11 +28,12 @@ try {
   useEffect( () => {
     getHeroData()
   }, [])
- console.log(heroData);
+//  console.log(heroData);
   return (
     <div>
 
      <h1>Home Page</h1>
+     <CharacterList heroData={heroData}/>
 
     </div>
   );
