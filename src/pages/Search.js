@@ -7,6 +7,7 @@ import CharacterItem from "../components/CharacterItem";
 export default function Search() {
   let [character, setCharacter] = useState(null);
 
+
    async function getCharacter(name) {
     // console.log(name);
 
@@ -41,7 +42,7 @@ export default function Search() {
       </div>
     );
   } else {
-    // if movie is null
+    // if movie is null 
     return (
       <div>
         <h1>Search for a Hero or Villian</h1>
