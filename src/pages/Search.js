@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Form from "../components/Form";
 import CharacterItem from "../components/CharacterItem";
 
+
 // import MovieDisplay from "./components/MovieDisplay";
 
 export default function Search() {
