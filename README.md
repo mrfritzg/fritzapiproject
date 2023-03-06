@@ -7,7 +7,7 @@ This website combines Super Heros/Villian Website from Marvel, DC and more!. The
 
 This is a project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Here is the URL for the page: 
+Here is the URL for the page: https://master--strong-basbousa-98aece.netlify.app/
 
 ## The website is divided into 3 main Sections, HOME, SEARCH, FAVORITES
 
