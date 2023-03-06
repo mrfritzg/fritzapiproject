@@ -32,7 +32,7 @@ export default function Character (props) {
     }
     console.log(character2)
     // console.log(character2.connections.groupAffiliation)
-  console.log(character2.connections?.["group-affiliation"])
+//   console.log(character2.connections?.["group-affiliation"])
     useEffect(() => {
         getCharacter2();
        

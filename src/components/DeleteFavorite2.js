@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-export default function DeleteFavorite({ setFavCharacters, hero}) {
+export default function DeleteFavorite2({ heroID}) {
     // console.log(key)
 
     let currentStorage = JSON.parse(localStorage.getItem("favs")) || []
@@ -14,7 +14,10 @@ export default function DeleteFavorite({ setFavCharacters, hero}) {
 
     function removeCharacter() {
 
-         console.log(currentStorage);
+        //get the current hero objects from local storage
+        // let currentStorage = JSON.parse(localStorage.getItem("favs")) || []
+
+        console.log(currentStorage);
        
         let newStorage = currentStorage.filter(prevHeroes => (hero.id !== prevHeroes.id))
             //update local storage

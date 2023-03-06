@@ -8,26 +8,7 @@ export default function Favorites() {
     let [favCharacters, setFavCharacters] = useState(currentStorage); 
     let [pageSource, setPageSource] = useState('delFavorites'); 
 
-    useEffect(() =>
-    {
-      setFavCharacters(currentStorage)
-    },[])
-
-
-    function removeCharacter(hero) {
-
-      //get the current hero objects from local storage
-      // let currentStorage = JSON.parse(localStorage.getItem("favs")) || []
-     
-      let newStorage = currentStorage.filter(prevHeroes => (hero?.id !== prevHeroes.id))
-          //update local storage
-      localStorage.setItem("favs", JSON.stringify(newStorage)) 
-      setFavCharacters(newStorage)
-
-      }
-
-
-    return (
+   return (
         
         <div>
             <h1>Here is your List of Favorite Heros/Villians</h1>
@@ -35,13 +16,11 @@ export default function Favorites() {
           return (
             <div>
             <CharacterItem pageSource={pageSource}  hero={hero} />   
-            {/* <DeleteFavorite /> */}
+            <DeleteFavorite  key={() => crypto.randomUUID()} setFavCharacters={setFavCharacters} hero={hero} />
             
             </div>
           )
         })}
-        <button onClick= { removeCharacter}>
-    Remove from Favorites </button>
         </div>
     )
 }
