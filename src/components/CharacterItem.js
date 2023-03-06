@@ -51,7 +51,7 @@ export default function CharacterItem({ pageSource,hero }) {
                 {/* <button onClick={ () => {favoriteCharacter(hero)}}>
                     Add to Favorites</button> */}
                 
-                {pageSource ==='favorites'? <DeleteFavorite heroID={hero.id} /> : <AddFavorites hero={hero} />}
+                {pageSource !=='delFavorites'? <AddFavorites hero={hero} /> : <p></p> }
 
             </div>
         </div>

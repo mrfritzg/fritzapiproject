@@ -6,7 +6,7 @@ export default function Favorites() {
     
     let currentStorage = JSON.parse(localStorage.getItem("favs")) || []
     let [favCharacters, setFavCharacters] = useState(currentStorage); 
-    let [pageSource, setPageSource] = useState('favorites'); 
+    let [pageSource, setPageSource] = useState('delFavorites'); 
 
     useEffect(() =>
     {
@@ -35,10 +35,13 @@ export default function Favorites() {
           return (
             <div>
             <CharacterItem pageSource={pageSource}  hero={hero} />   
-            {/* <DeleteFavorite removeCharacter={removeCharacter}/> */}
+            {/* <DeleteFavorite /> */}
+            
             </div>
           )
         })}
+        <button onClick= { removeCharacter}>
+    Remove from Favorites </button>
         </div>
     )
 }
