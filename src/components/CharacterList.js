@@ -1,6 +1,11 @@
 import CharacterItem from "./CharacterItem";
+// import AddFavorite from "./AddFavorite";
+import { useEffect, useState } from "react";
 
 export default function CharacterList({ heroData }) {
+    
+    let [pageSource, setPageSource] = useState('characterlist'); 
+
     //  console.log(heroData);
     return (
         <div className="heroList">
@@ -9,7 +14,10 @@ export default function CharacterList({ heroData }) {
             {/* <CharacterItem heroData={heroData}/> */}
             {heroData.map(hero => {
                 return (
-                    <CharacterItem key={hero.id} hero={hero}/>
+                    <div>
+                    <CharacterItem pageSource={pageSource} key={hero.id} hero={hero}/>
+                    {/* <AddFavorite key={hero.id}  hero={hero}/>  */}
+                    </div>
                 )})}
         </div>
     )

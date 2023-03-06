@@ -9,6 +9,9 @@ export default function Nav(props) {
             <Link to="/search">
                 <div>Search</div>
             </Link>
+            <Link to="/favorites">
+                <div>Favorites</div>
+            </Link>
             <Link to="/about">
                 <div>About</div>
             </Link>

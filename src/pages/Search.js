@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Form from "../components/Form";
 import CharacterItem from "../components/CharacterItem";
+import AddFavorite from "../components/AddFavorite";
 
 
 // import MovieDisplay from "./components/MovieDisplay";
@@ -36,7 +37,10 @@ export default function Search() {
         <Form getCharacter={getCharacter} />
         {character.map(hero => {
           return (
+            <div>
             <CharacterItem key={hero.id} hero={hero} />   
+            <AddFavorite key={hero.id} hero={hero} />
+            </div>
           )
         })}
         
