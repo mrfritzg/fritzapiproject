@@ -9,6 +9,8 @@ export default function Character (props) {
     function goBack() {
         navigate(-1)
         }  
+
+        
     async function getCharacter2() {
         // console.log(id);
         let key = '1381472152670820';
@@ -41,11 +43,32 @@ export default function Character (props) {
     return (
         
         <div>
+            <button onClick={goBack}>{"BACK"}</button>
             {/* console.log({character2}) */}
             <img src={character2.image?.url} alt={character2.name} />
             
-            <p>Name: {character2.name}</p>
+            <p>Code Name: {character2.name}</p>
+            <p>Full Name: {character2.biography?.["full-name"]}</p>
+            POWER STATS:
+            <ul>
+            <li>Combat: {character2.powerstats?.combat} </li>
+            <li>Durability: {character2.powerstats?.durability} </li>
+            <li>Intelligence: {character2.powerstats?.intelligence} </li>
+            <li>Power: {character2.powerstats?.power} </li>
+            <li>Speed: {character2.powerstats?.speed} </li>
+            <li>Strength: {character2.powerstats?.strength} </li>
+            </ul>
+            <p>Biography:</p>
+            <ul>
+            <li>Aliases: {character2.biography?.aliases.toString(" ")}</li>
+            <li>Alignment: {character2.biography?.alignment==="good"?"Hero":"Villian"}</li>
+            <li>-Alter-Egos: {character2.biography?.["alter-egos"]}</li>
+            <li>-Place Of Birth: {character2.biography?.["place-of-birth"]}</li>
+            <li>-Publisher: {character2.biography?.publisher}</li>
+            <li>-First-Appearance: {character2.biography?.["first-appearance"]}</li>
+            </ul>
             <p>Group-Affiliations: {character2.connections?.["group-affiliation"]}</p>
+            <p>Work: {character2.work?.occupation}</p>
             
 
         </div>
