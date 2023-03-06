@@ -37,9 +37,9 @@ export default function Search() {
         <Form getCharacter={getCharacter} />
         {character.map(hero => {
           return (
-            <div>
-            <CharacterItem key={hero.id} hero={hero} />   
-            <AddFavorite key={hero.id} hero={hero} />
+            <div  key={hero.id}>
+            <CharacterItem hero={hero} />   
+            
             </div>
           )
         })}

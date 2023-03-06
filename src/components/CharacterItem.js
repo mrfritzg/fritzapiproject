@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AddFavorites from "./AddFavorite";
+import AddFavorite from "./AddFavorite";
 import DeleteFavorite from "../components/DeleteFavorite";
 
 export default function CharacterItem({ pageSource,hero }) {
@@ -51,7 +51,7 @@ export default function CharacterItem({ pageSource,hero }) {
                 {/* <button onClick={ () => {favoriteCharacter(hero)}}>
                     Add to Favorites</button> */}
                 
-                {pageSource !=='delFavorites'? <AddFavorites hero={hero} /> : <p></p> }
+                {pageSource !=='delFavorites'? <AddFavorite hero={hero} /> : <p></p> }
 
             </div>
         </div>

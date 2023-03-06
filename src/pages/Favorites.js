@@ -14,7 +14,7 @@ export default function Favorites() {
             <h1>Here is your List of Favorite Heros/Villians</h1>
 {favCharacters.map(hero => {
           return (
-            <div>
+            <div key={hero.id}>
             <CharacterItem pageSource={pageSource}  hero={hero} />   
             <DeleteFavorite  key={() => crypto.randomUUID()} setFavCharacters={setFavCharacters} hero={hero} />
             

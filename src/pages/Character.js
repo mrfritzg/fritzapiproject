@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import AddFavorite from "../components/AddFavorite";
 
 export default function Character (props) {
     let { symbol } = useParams(); // -> { symbol: ''}
@@ -69,7 +70,7 @@ export default function Character (props) {
             </ul>
             <p>Group-Affiliations: {character2.connections?.["group-affiliation"]}</p>
             <p>Work: {character2.work?.occupation}</p>
-            
+            <AddFavorite hero={character2} />
 
         </div>
     )
