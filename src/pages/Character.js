@@ -44,7 +44,9 @@ export default function Character (props) {
     return (
         
         <div>
-            <button onClick={goBack}>{"BACK"}</button>
+            <div>
+                <button className="backBtn"onClick={goBack}>{"BACK"}</button>
+                </div>
             {/* console.log({character2}) */}
             <img src={character2.image?.url} alt={character2.name} />
             

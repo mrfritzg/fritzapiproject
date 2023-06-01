@@ -33,8 +33,9 @@ export default function Search() {
 
   if (character) {
     return (
-      <div className="App">
+      <div className="App heroList">
         <Form getCharacter={getCharacter} />
+        <br/>
         {character.map(hero => {
           return (
             <div  key={hero.id}>

@@ -30,7 +30,7 @@ try {
   }, [])
 //  console.log(heroData);
   return (
-    <div>
+    <div className="homepage">
 
      <h1>The Super Heros/Villian Website</h1>
      <h2>This Website provides Heros/Villian from mutliple universes. Most Websites give you only once comic book creator source, but we give you Marvel, DC and more!.</h2>

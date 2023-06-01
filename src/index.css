@@ -25,14 +25,32 @@ code {
   text-decoration: none;
 }
 
+.homepage {
+  margin: 20px;
+}
+
+.heroList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 20px; /* row-gap column gap */
+
+}
+
 .heroDiv {
   border: 2px solid black;
-  width: 160px;
+  /* width: 160px; */
   height: auto;
-  margin: 20px;
+  /* margin: 5px; */
+  flex: 1 0 160px;
 }
 
 .heroInfo {
   background-color: red;
   color: white;
+}
+
+
+.backBtn {
+  margin: 10px;
 }
