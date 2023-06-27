@@ -8,6 +8,7 @@ import AddFavorite from "../components/AddFavorite";
 
 export default function Search() {
   let [character, setCharacter] = useState(null);
+  const [isPending, setIsPending] = useState(true);
 
 
    async function getCharacter(name) {
@@ -20,6 +21,7 @@ export default function Search() {
       let response = await fetch(url);
        let data = await response.json();
        setCharacter(data.results);
+       setIsPending(false);
     // console.log(response)
     // console.log(data.results)
     } catch (error) {
@@ -33,9 +35,11 @@ export default function Search() {
 
   if (character) {
     return (
+      
       <div className="App heroList">
         <Form getCharacter={getCharacter} />
         <br/>
+        {isPending && <div><h1>LOADING...</h1></div> }
         {character.map(hero => {
           return (
             <div  key={hero.id}>
