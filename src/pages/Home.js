@@ -45,8 +45,8 @@ export default function Home() {
   return (
     <div className="homepage">
 
-      <h1>The Super Heros/Villain Website</h1>
-      <h2>This Website provides Heros/Villain from mutliple universes. Most Websites give you only once comic book creator source, but we give you Marvel, DC and more!.</h2>
+      <h1>The Super Heroes/Villain Website</h1>
+      <h2>This Website provides Heroes/Villain from mutliple universes. Most Websites give you only once comic book creator source, but we give you Marvel, DC and more!.</h2>
       <h2>Please Scroll Thru and find what you're looking for or Click on the Search Page.</h2>
 
       {error && <div><h1>{error}</h1></div>}
