@@ -9,7 +9,7 @@ const useFetch = (url) => {
     useEffect(() => {
         fetch(url)
             .then(res => {
-                console.log(res)
+                // console.log(res)
                 if (!res.ok) {
                     throw Error('ERROR!! -- could not reach the data for that resource');
                 }
@@ -21,7 +21,7 @@ const useFetch = (url) => {
                 setError(null);
             })
             .catch(err => {
-                console.error(err);
+                // console.error(err);
                 setError(err.message);
                 setIsPending(false)
             })
