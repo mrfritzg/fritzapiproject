@@ -1,8 +1,8 @@
-# The Super Heros/Villian Website
+# The Super Heroes/Villain Website
 
-The purpose of this project is to build a website where you lookup Super Heros/Villian information. 
-While browsing the internet, I could only find Super Heros/Villian websites that were limited to a single comic book universe, DC-only, Marvel-only, etc. 
-This website combines Super Heros/Villian Website from Marvel, DC and more!. The goal of this website is to make it to the number 1 site for all  Super Heros/Villian information. 
+The purpose of this project is to build a website where you lookup Super Heroes/Villain information. 
+While browsing the internet, I could only find Super Heroes/Villain websites that were limited to a single comic book universe, DC-only, Marvel-only, etc. 
+This website combines Super Heroes/Villain Website from Marvel, DC and more!. The goal of this website is to make it to the number 1 site for all  Super Heroes/Villain information. 
 
 
 This is a project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -12,7 +12,7 @@ Here is the URL for the page: https://master--strong-basbousa-98aece.netlify.app
 ## The website is divided into 3 main Sections, HOME, SEARCH, FAVORITES
 
 **HOME**
-This page contains a list of all Super Heros/Villians. Please scroll thru the list. 
+This page contains a list of all Super Heroes/Villains. Please scroll thru the list. 
 Click on the image for more information about the character.
 Click on the "Add to Favorites" button to add to your personal list of favorite characters
 
@@ -38,5 +38,5 @@ The Favorites page stores the favorite characters in Local Storage of the browse
 - `Add a carousel`
 - `Add a random back ground for each page`
 - `Add Filter Search bar for HomePage`
-- `Add Filter Button for each comic book universe, Hero and Villians, to help with searching`
+- `Add Filter Button for each comic book universe, Hero and Villains, to help with searching`
 - `Upgrade the use of Local Storage to Redux/Context`
