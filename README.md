@@ -2,7 +2,7 @@
 
 The purpose of this project is to build a website where you lookup Super Heroes/Villain information. 
 While browsing the internet, I could only find Super Heroes/Villain websites that were limited to a single comic book universe, DC-only, Marvel-only, etc. 
-This website combines Super Heroes/Villain Website from Marvel, DC and more!. The goal of this website is to make it to the number 1 site for all  Super Heroes/Villain information. 
+This website combines Super Heroes/Villains data from Marvel, DC and more!. The goal of this website is to make it to the number 1 site for all  Super Heroes/Villains information. 
 
 
 This is a project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
