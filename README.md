@@ -1,4 +1,4 @@
-# The Super Heroes/Villain Website
+# The Super Heroes/Villains Website
 
 The purpose of this project is to build a website where you lookup Super Heroes/Villain information. 
 While browsing the internet, I could only find Super Heroes/Villain websites that were limited to a single comic book universe, DC-only, Marvel-only, etc. 
