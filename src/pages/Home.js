@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CharacterList from "../components/CharacterList";
 import useFetch from "../components/useFetch";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -46,8 +47,9 @@ export default function Home() {
     <div className="homepage">
 
       <h1>The Super Heroes/Villains Website</h1>
-      <h2>This Website provides Hero/Villain from mutliple universes. Most Websites give you only once comic book creator source, but we give you Marvel, DC and more!.</h2>
+      <h2>This Website provides Hero/Villain from mutliple universes. Most Websites give you only one comic book creator source, but we give you Marvel, DC and more!.</h2>
       <h2>Please Scroll Thru and find what you're looking for or Click on the Search Page.</h2>
+      <h1>Please visit the updated <Link to="https://master--shiny-muffin-437497.netlify.app/">version</Link> of this web app</h1>
 
       {error && <div><h1>{error}</h1></div>}
       {isPending && <div><h1>LOADING...</h1></div>}
